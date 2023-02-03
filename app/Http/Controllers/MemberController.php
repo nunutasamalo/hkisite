@@ -23,7 +23,7 @@ dd($members);
 //     echo $member->FirstName;
 // }
     return view('index',['members'=>$members]);
-
+    //return view('index',$members->toJson(JSON_PRETTY_PRINT));
     }
 
     /**
