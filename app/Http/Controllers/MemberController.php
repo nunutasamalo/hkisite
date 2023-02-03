@@ -50,6 +50,8 @@ dd($members);
         Family::create([
             'name'=>$request->nick,
         ]);
+
+        //insert to database
     }
 
     /**

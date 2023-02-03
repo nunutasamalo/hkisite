@@ -1,7 +1,7 @@
 /*
 SQLyog Ultimate v12.4.3 (64 bit)
 MySQL - 10.8.3-MariaDB : Database - hkidb
-*********************************************************************
+***********************************************************************
 */
 
 /*!40101 SET NAMES utf8 */;
@@ -28,7 +28,7 @@ CREATE TABLE `contribution_types` (
 
 /*Data for the table `contribution_types` */
 
-insert  into `contribution_types`(`id`,`name`) values 
+insert  into `contribution_types`(`id`,`name`) values
 (1,'offering'),
 (2,'donation');
 
@@ -51,7 +51,7 @@ CREATE TABLE `contributions` (
 
 /*Data for the table `contributions` */
 
-insert  into `contributions`(`id`,`member_id`,`amount`,`contribution_date`,`contribution_id`) values 
+insert  into `contributions`(`id`,`member_id`,`amount`,`contribution_date`,`contribution_id`) values
 (1,4,500000,'2023-01-01',1);
 
 /*Table structure for table `daily_devotions` */
@@ -82,7 +82,7 @@ CREATE TABLE `family` (
 
 /*Data for the table `family` */
 
-insert  into `family`(`FamilyID`,`FamilyName`,`Nik`) values 
+insert  into `family`(`FamilyID`,`FamilyName`,`Nik`) values
 (1,'Bp.Joseph Manalu','123456789'),
 (2,'Bp.Fery Simamora','987654321');
 
@@ -99,7 +99,7 @@ CREATE TABLE `family_ori` (
 
 /*Data for the table `family_ori` */
 
-insert  into `family_ori`(`FamilyID`,`FamilyName`,`NIK`) values 
+insert  into `family_ori`(`FamilyID`,`FamilyName`,`NIK`) values
 (1,'Pa Joseph Manalu','123456789');
 
 /*Table structure for table `members` */
@@ -118,7 +118,7 @@ CREATE TABLE `members` (
 
 /*Data for the table `members` */
 
-insert  into `members`(`MemberID`,`FirstName`,`LastName`,`FamilyID`) values 
+insert  into `members`(`MemberID`,`FirstName`,`LastName`,`FamilyID`) values
 (1,'Jairo','Manalu',1),
 (2,'Gonti','Manalu',2);
 
@@ -147,7 +147,7 @@ CREATE TABLE `members_ori` (
 
 /*Data for the table `members_ori` */
 
-insert  into `members_ori`(`MemberID`,`FirstName`,`LastName`,`Email`,`PhoneNumber`,`Address`,`City`,`State`,`ZipCode`,`DateOfMembership`,`FamilyID`,`Notes`,`HubunganKeluarga`) values 
+insert  into `members_ori`(`MemberID`,`FirstName`,`LastName`,`Email`,`PhoneNumber`,`Address`,`City`,`State`,`ZipCode`,`DateOfMembership`,`FamilyID`,`Notes`,`HubunganKeluarga`) values
 (1,'Jairo Budimantua','Manalu','jairo Manalu','08119942582 ','Tomang','Cibinong','Jawa Barat','18144','2023-01-01',1,NULL,NULL);
 
 /*Table structure for table `ms_districs` */
@@ -163,7 +163,7 @@ CREATE TABLE `ms_districs` (
 
 /*Data for the table `ms_districs` */
 
-insert  into `ms_districs`(`id`,`name`,`description`) values 
+insert  into `ms_districs`(`id`,`name`,`description`) values
 (1,'I','Kranji, Bintara'),
 (2,'II','Cibinong, Cilengsi');
 
@@ -180,7 +180,7 @@ CREATE TABLE `ms_groups` (
 
 /*Data for the table `ms_groups` */
 
-insert  into `ms_groups`(`id`,`name`,`decription`) values 
+insert  into `ms_groups`(`id`,`name`,`decription`) values
 (1,'Marturia',NULL),
 (2,'Diakonia',NULL),
 (3,'Koinonia',NULL),
@@ -201,7 +201,7 @@ CREATE TABLE `ms_liturgy` (
 
 /*Data for the table `ms_liturgy` */
 
-insert  into `ms_liturgy`(`id`,`liturgy_name`) values 
+insert  into `ms_liturgy`(`id`,`liturgy_name`) values
 (1,'Votum'),
 (2,'Bernyanyi'),
 (3,'Hukum Taurat'),
@@ -237,7 +237,7 @@ CREATE TABLE `ms_members` (
 
 /*Data for the table `ms_members` */
 
-insert  into `ms_members`(`id`,`first_name`,`last_name`,`email`,`phone`,`address`,`city`,`state`,`zipcode`,`birthdate`,`gender`,`baptism_date`,`confirmation_date`,`member_status`) values 
+insert  into `ms_members`(`id`,`first_name`,`last_name`,`email`,`phone`,`address`,`city`,`state`,`zipcode`,`birthdate`,`gender`,`baptism_date`,`confirmation_date`,`member_status`) values
 (1,'Berton','Sialaban','berton@gamil.com','08119942582','Jl.Permata No 11 Blok A2','Pulo Mas','Jakarta Timur','1144','1969-01-01','male','1969-06-11','1970-01-01','active'),
 (2,'Reynold','Manalu','reynold@gmail.comq','08119942222','Jl. Katiak Sari No 12','Cibinong ','Jawa Barat','1122','0000-00-00',NULL,'0000-00-00','0000-00-00',NULL),
 (3,'Arnol','Manurung','arnold@gamil.com','01777777777','Jl. Kramat','Bogor','Jawa Barat ','11111','0000-00-00',NULL,'0000-00-00','0000-00-00',NULL),
@@ -258,7 +258,7 @@ CREATE TABLE `ms_news` (
 
 /*Data for the table `ms_news` */
 
-insert  into `ms_news`(`id`,`name`) values 
+insert  into `ms_news`(`id`,`name`) values
 (1,'Marturia'),
 (2,'Diakonia'),
 (3,'Koinonia'),
@@ -280,7 +280,7 @@ CREATE TABLE `ms_roles` (
 
 /*Data for the table `ms_roles` */
 
-insert  into `ms_roles`(`id`,`name`) values 
+insert  into `ms_roles`(`id`,`name`) values
 (1,'Pengkotbah'),
 (2,'Liturgist'),
 (3,'Doa Syafaat'),
@@ -313,7 +313,7 @@ CREATE TABLE `ms_service_type` (
 
 /*Data for the table `ms_service_type` */
 
-insert  into `ms_service_type`(`id`,`name`,`time`) values 
+insert  into `ms_service_type`(`id`,`name`,`time`) values
 (4,'Ibadah Pagi','07:00:00'),
 (5,'Ibadah Siang','09:00:00'),
 (6,'Ibadah Sore','17:00:00'),
@@ -335,7 +335,7 @@ CREATE TABLE `ms_thema` (
 
 /*Data for the table `ms_thema` */
 
-insert  into `ms_thema`(`id`,`name`,`description`,`service_date`,`sunday_school_thema`) values 
+insert  into `ms_thema`(`id`,`name`,`description`,`service_date`,`sunday_school_thema`) values
 (1,'Ephiphanias ','Penampakan Allah/ Allah menjadi Manusia (Hapapatar)','2023-01-22','Berdamai'),
 (2,'Septuagesima','Artinya tujuh puluh hari sebelum Paskah atau Kebangkitan Yesus Kristus. Pitu pulu ari dijolo ni ari Haheheon ni Tuhan Jesus Kristus.','2023-01-15','Bersukacita'),
 (3,'Sexagesima','Artinya enam puluh hari sebelum Paskah atau Kebangkitan Yesus Kristus. Onom pulu ari dijolo ni ari Haheheon ni Tuhan Jesus Kristus.',NULL,'Bersorak sorai '),
@@ -377,7 +377,7 @@ CREATE TABLE `tb_attendees` (
 
 /*Data for the table `tb_attendees` */
 
-insert  into `tb_attendees`(`id`,`service_id`,`role_id`,`member_id`) values 
+insert  into `tb_attendees`(`id`,`service_id`,`role_id`,`member_id`) values
 (20,9,1,1),
 (21,9,2,2),
 (22,9,3,3),
@@ -422,7 +422,7 @@ CREATE TABLE `tb_member_districs` (
 
 /*Data for the table `tb_member_districs` */
 
-insert  into `tb_member_districs`(`id`,`member_id`,`distric_id`) values 
+insert  into `tb_member_districs`(`id`,`member_id`,`distric_id`) values
 (1,1,1);
 
 /*Table structure for table `tb_member_groups` */
@@ -442,7 +442,7 @@ CREATE TABLE `tb_member_groups` (
 
 /*Data for the table `tb_member_groups` */
 
-insert  into `tb_member_groups`(`id`,`member_id`,`group_id`) values 
+insert  into `tb_member_groups`(`id`,`member_id`,`group_id`) values
 (1,3,2);
 
 /*Table structure for table `tb_news_details` */
@@ -461,7 +461,7 @@ CREATE TABLE `tb_news_details` (
 
 /*Data for the table `tb_news_details` */
 
-insert  into `tb_news_details`(`id`,`news_id`,`news_value`,`service_date`) values 
+insert  into `tb_news_details`(`id`,`news_id`,`news_value`,`service_date`) values
 (1,1,'1.Sermon Resort.\r\nSermon Resort akan dilaksanakan setiap hari kamis mulai pukul\r\n2.Yang akan menyampaikan Firman Tuhan\r\n3.Mari kita bawa dalam Doa anak- anak\r\n4.Hari Minggu, 22 Mei 2023','2023-01-22'),
 (2,2,'1.Berita Duka Cita\r\nTelah meninggal dunia ibu\r\n2. Hari ini kita akan mengumpulkan persembahan\r\n3. Kepada jemaat\r\n','2023-01-22');
 
@@ -480,7 +480,7 @@ CREATE TABLE `tb_services` (
 
 /*Data for the table `tb_services` */
 
-insert  into `tb_services`(`id`,`service_type`,`date`) values 
+insert  into `tb_services`(`id`,`service_type`,`date`) values
 (9,4,'2023-01-01'),
 (10,5,'2023-01-01'),
 (11,6,NULL),
